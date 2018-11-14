@@ -1,0 +1,128 @@
+//Colors
+$ruby     : #e0115f;
+$sapphire : #082567;
+$emerald  : #50c878;
+$gold     : #ffd700;
+$silver   : #c0c0c0;
+
+@font-face {
+  font-family: smashbros;
+  src:url('../font/smash.ttf');
+}
+
+html {
+  font-family: smashbros;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+nav {
+  position: fixed;
+  height: 100vh;
+  display: grid;
+  align-content: center;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: #ccc;
+    text-decoration: none;
+    background: #333;
+    display: block;
+    padding: .5em 1.5em .5em 1em;
+    margin: .5em 0;
+    border-left: 5px solid transparent;
+    border-radius: 0 2em 2em 0;
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  #rubyL {
+    &:hover {
+      color: #fff;
+      background: darken($ruby, 20);
+      border-left: 5px solid #fff;
+    }
+  }
+
+  #sapphireL {
+    &:hover {
+      color: #fff;
+      background: darken($sapphire, 10);
+      border-left: 5px solid #fff;
+    }
+  }
+
+  #emeraldL {
+    &:hover {
+      color: #fff;
+      background: darken($emerald, 20);
+      border-left: 5px solid #fff;
+    }
+  }
+
+  #goldL {
+    &:hover {
+      color: #fff;
+      background: darken($gold, 20);
+      border-left: 5px solid #fff;
+    }
+  }
+
+  #silverL {
+    &:hover {
+      color: #fff;
+      background: darken($silver, 20);
+      border-left: 5px solid #fff;
+    }
+  }
+
+  #horizonL,
+  #vertiL {
+    &:hover {
+      background: darken(red, 30);
+    }
+  }
+
+}
+
+section {
+  min-height: 100vh;
+  padding: 2em 2em 2em 9em;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    font-size: 60px;
+  }
+}
+
+footer {
+  background: black;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: sticky;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#ruby     { background: #e0115f; }
+#sapphire { background: #082567; }
+#emerald  { background: #50c878; }
+#gold     { background: #ffd700; color: #333}
+#silver   { background: #c0c0c0; }

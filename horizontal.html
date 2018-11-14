@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Smoothie Scrollie - Horizontal</title>
+
+    <!-- Linking to CSS -->
+    <link rel="stylesheet" href="css/vertical.css">
+
+    <!-- Style for Horizontal -->
+    <style media="screen">
+
+      html {
+        overflow-y: hidden;
+      }
+
+      main {
+        width: 500vw;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      section {
+        box-sizing: border-box;
+        height: 100vh;
+        overflow: auto;
+      }
+
+      .photo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+      }
+
+      .photo img {
+        max-width: 50%;
+        margin: 1em auto;
+        text-align: center;
+      }
+
+      #ruby, #emerald, #silver {
+        display: block;
+      }
+
+      footer {
+        width: 500%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a id="rubyL" href="#ruby">Ruby</a></li>
+        <li><a id="sapphireL" href="#sapphire">Sapphire</a></li>
+        <li><a id="emeraldL" href="#emerald">Emerald</a></li>
+        <li><a id="goldL" href="#gold">GOld</a></li>
+        <li><a id="silverL" href="#silver">Silver</a></li>
+        <li><a id="vertiL" href="index.html">Vertical</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <section id="ruby">
+        <h2>Ruby Horizontal</h2>
+
+        <div class="photo">
+          <img src="https://r.mprd.se/GBA/boxart/2006.jpg" alt="Pokémon Ruby">
+          <img src="https://mysvgc.files.wordpress.com/2015/12/199-groudon-primal.png?w=825&h=510&crop=1" alt="Groudon">
+          <img src="https://i.gifer.com/8BQR.gif" alt="Title Screen (Fan Made)">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/61Kpuf7wD5L.jpg" alt="Groudon Pokémon Card">
+        </div>
+
+      </section>
+
+      <section id="sapphire">
+        <h2>Sapphire Horizontal</h2>
+        <p>Deze pagina bevat de kleur Sapphire</p>
+      </section>
+
+      <section id="emerald">
+        <h2>Emerald Horizontal</h2>
+
+        <div class="photo">
+          <img src="https://server.emulator.games/images/gameboy-advance/pokemon-emerald-version.jpg" alt="Pokémon Emerald">
+          <img src="https://vignette.wikia.nocookie.net/nintendo/images/7/7b/Mega_Rayquaza.png/revision/latest?cb=20160301060246&path-prefix=en" alt="Rayquaza">
+          <img src="https://media.giphy.com/media/LJGpExgmRpUbK/source.gif" alt="Protagonists">
+          <img src="https://pod.pokellector.com/cards/143/Rayquaza-EX.XY.66.png" alt="Raquaza Pokémon Card">
+        </div>
+
+      </section>
+
+      <section id="gold">
+        <h2>GOld Horizontal</h2>
+        <p>Deze pagina bevat de kleur Gold</p>
+      </section>
+
+      <section id="silver">
+        <h2>Silver Horizontal</h2>
+
+        <div class="photo">
+          <img src="https://cdn02.nintendo-europe.com/media/images/05_packshots/games_13/game_boy_color/PS_GBC_PokemonSilver_enGB.jpg" alt="Pokémon Silver">
+          <img src="https://vignette.wikia.nocookie.net/vsbattles/images/0/02/600px-249Lugia_HGSS_2.png/revision/latest?cb=20180304170302" alt="Lugia">
+          <img src="https://media.giphy.com/media/13nKdJnOFF3NEQ/giphy.gif" alt="Title Screen (Cropped)">
+          <img src="https://pkmncards.com/wp-content/uploads/lugia-ex-plasma-storm-pls-134-ptcgo-1.png" alt="Lugia Pokémon Card">
+        </div>
+
+      </section>
+
+      <footer>
+        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+          <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5">
+        </a>
+
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+          <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+        </a>
+      </footer>
+
+    </main>
+
+
+
+  </body>
+</html>
